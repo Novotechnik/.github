@@ -23,40 +23,52 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Actions erster Durchlauf
-        run: echo "Hello Actions"
-#      - name: Repository auschecken
-#        uses: actions/checkout@v4
+     - name: Repository auschecken
+       uses: actions/checkout@v4
 
-#      - name: README erzeugen
-#        run: |
-#          cat > profile/README.md << 'EOF'
+     - name: README erzeugen
+       run: |
+         cat > profile/README.md << 'EOF'
           # Novotechnik GitHub
 
-#          Willkommen in der GitHub Organisation
+          Willkommen in der GitHub Organisation
 
-          ## 🚀 Software Development
+          ## 🚀 Firmware
+          - https://github.com/Novotechnik/p00753_tf1
+
+          ## 🤖 Jenkins
+          - https://github.com/Novotechnik/cicd-jenkins-sharedlib-codebeamer
+          - https://github.com/Novotechnik/cicd-jenkins-sharedlib-docker
+          - https://github.com/Novotechnik/cicd-jenkins-sharedlib-jenkins
+
+          ## 🐳 Docker
+          - https://github.com/Novotechnik/cicd-cmakes
+          - https://github.com/Novotechnik/cicd-docker-compilers
+          - https://github.com/Novotechnik/cicd-docker-packages
+          - https://github.com/Novotechnik/cicd-docker-packages
+          - https://github.com/Novotechnik/docker_images_compiler_gnu_arm_5_4
+
+          ## 🛠️ Tools
+          - https://github.com/Novotechnik/
+
+          ## 🌐 Extern
+          - https://github.com/Novotechnik/
+
+          ## 📌 Sonstiges
+          - https://github.com/Novotechnik/
           
-#          - https://github.com/Novotechnik/p00753_tf1
+          EOF
 
-          ## 🔧 DevOps
+     - name: Commit und Push
+       run: |
+         git config user.name "github-actions"
+         git config user.email "github-actions@github.com"
 
-#          - https://github.com/Novotechnik/cicd-jenkins-sharedlib-codebeamer
-#          - https://github.com/Novotechnik/cicd-jenkins-sharedlib-docker
-#          - https://github.com/Novotechnik/cicd-jenkins-sharedlib-jenkins
+         git add profile/README.md
 
-#          EOF
-
-#      - name: Commit und Push
-#        run: |
-#          git config user.name "github-actions"
-#          git config user.email "github-actions@github.com"
-
-#          git add profile/README.md
-
-#          if git diff --staged --quiet; then
-#            echo "Keine Änderungen."
-#          else
-#            git commit -m "Update Organisation README"
-#            git push
-#          fi
+         if git diff --staged --quiet; then
+           echo "Keine Änderungen."
+         else
+           git commit -m "Update Organisation README"
+           git push
+         fi
