@@ -23,53 +23,59 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-     - name: Repository auschecken
-       uses: actions/checkout@v4
+      - name: Repository auschecken
+        uses: actions/checkout@v4
 
-     - name: README erzeugen
-       run: |
-         cat > profile/README.md << 'EOF'
-          # Novotechnik GitHub
-
-          Willkommen in der GitHub Organisation
-
-          ## 🚀 Firmware
-          - https://github.com/Novotechnik/p00753_tf1
-
-          ## 🤖 Jenkins
-          - https://github.com/Novotechnik/cicd-jenkins-sharedlib-codebeamer
-          - https://github.com/Novotechnik/cicd-jenkins-sharedlib-docker
-          - https://github.com/Novotechnik/cicd-jenkins-sharedlib-jenkins
-
-          ## 🐳 Docker
-          - https://github.com/Novotechnik/cicd-cmakes
-          - https://github.com/Novotechnik/cicd-docker-compilers
-          - https://github.com/Novotechnik/cicd-docker-packages
-          - https://github.com/Novotechnik/cicd-docker-packages
-          - https://github.com/Novotechnik/docker_images_compiler_gnu_arm_5_4
-
-          ## 🛠️ Tools
-          - https://github.com/Novotechnik/
-
-          ## 🌐 Extern
-          - https://github.com/Novotechnik/
-
-          ## 📌 Sonstiges
-          - https://github.com/Novotechnik/
+      - name: GitHub CLI testen
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api repos/Novotechnik/p00753_tf1/properties/values
           
-          ## ✔️ Qualität
-          - https://github.com/Novotechnik/
+      - name: README erzeugen
+        run: |
+          cat > profile/README.md << 'EOF'
+           # Novotechnik GitHub
 
-     - name: Commit und Push
-       run: |
-         git config user.name "github-actions"
-         git config user.email "github-actions@github.com"
+           Willkommen in der GitHub Organisation
 
-         git add profile/README.md
+           ## 🚀 Firmware
+           - https://github.com/Novotechnik/p00753_tf1
 
-         if git diff --staged --quiet; then
-           echo "Keine Änderungen."
-         else
-           git commit -m "Update Organisation README"
+           ## 🤖 Jenkins
+           - https://github.com/Novotechnik/cicd-jenkins-sharedlib-codebeamer
+           - https://github.com/Novotechnik/cicd-jenkins-sharedlib-docker
+           - https://github.com/Novotechnik/cicd-jenkins-sharedlib-jenkins
+
+           ## 🐳 Docker
+           - https://github.com/Novotechnik/cicd-cmakes
+           - https://github.com/Novotechnik/cicd-docker-compilers
+           - https://github.com/Novotechnik/cicd-docker-packages
+           - https://github.com/Novotechnik/cicd-docker-packages
+           - https://github.com/Novotechnik/docker_images_compiler_gnu_arm_5_4
+
+           ## 🛠️ Tools
+           - https://github.com/Novotechnik/
+
+           ## 🌐 Extern
+           - https://github.com/Novotechnik/
+
+           ## 📌 Sonstiges
+           - https://github.com/Novotechnik/
+          
+           ## ✔️ Quality
+           - https://github.com/Novotechnik/
+
+      - name: Commit und Push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add profile/README.md
+
+          if git diff --staged --quiet; then
+            echo "Keine Änderungen."
+          else
+            git commit -m "Update Organisation README"
            git push
-         fi
+          fi
