@@ -26,4 +26,5 @@
  ## 📌 Sonstiges
  - https://github.com/Novotechnik/
  
- EOF
+ ## ✔️ Qualität
+ - https://github.com/Novotechnik/
