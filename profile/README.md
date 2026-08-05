@@ -1,23 +1,29 @@
-# .github
+ # Novotechnik GitHub
 
-# Repository Übersicht
+ Willkommen in der GitHub Organisation
 
-## 🚀 Firmware
-| Repository | Beschreibung |
-|------------|-------------|
-| p00753_tf1 | Software für induktiven Wegaufnehmer |
+ ## 🚀 Firmware
+ - https://github.com/Novotechnik/p00753_tf1
 
-## 🔧 Docker
-| Repository | Beschreibung |
-|------------|-------------|
-| cicd-cmakes | CMake Hilfsfunktionen |
-| cicd-docker-compilers | Compiler Docker Images |
-| cicd-docker-packages | Docker Paketverwaltung |
-| docker_images_compiler_gnu_arm_5_4 | GNU ARM Toolchain |
- 
-## 🏗 Jenkins
-| Repository | Beschreibung |
-|------------|-------------|
-| cicd-jenkins-sharedlib-codebeamer | Codebeamer Integration |
-| cicd-jenkins-sharedlib-docker | Docker Funktionen |
-| cicd-jenkins-sharedlib-jenkins | Jenkins Funktionen |
+ ## 🤖 Jenkins
+ - https://github.com/Novotechnik/cicd-jenkins-sharedlib-codebeamer
+ - https://github.com/Novotechnik/cicd-jenkins-sharedlib-docker
+ - https://github.com/Novotechnik/cicd-jenkins-sharedlib-jenkins
+
+ ## 🐳 Docker
+ - https://github.com/Novotechnik/cicd-cmakes
+ - https://github.com/Novotechnik/cicd-docker-compilers
+ - https://github.com/Novotechnik/cicd-docker-packages
+ - https://github.com/Novotechnik/cicd-docker-packages
+ - https://github.com/Novotechnik/docker_images_compiler_gnu_arm_5_4
+
+ ## 🛠️ Tools
+ - https://github.com/Novotechnik/
+
+ ## 🌐 Extern
+ - https://github.com/Novotechnik/
+
+ ## 📌 Sonstiges
+ - https://github.com/Novotechnik/
+ 
+ EOF
