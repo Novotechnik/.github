@@ -25,7 +25,13 @@ jobs:
     steps:
       - name: Repository auschecken
         uses: actions/checkout@v4
-
+      
+      - name: Repository testen
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api repos/Novotechnik/p00753_tf1
+      
       - name: GitHub CLI testen
         env:
           GH_TOKEN: ${{ github.token }}
