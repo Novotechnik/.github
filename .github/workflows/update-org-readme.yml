@@ -28,19 +28,19 @@ jobs:
 
       - name: Repositories auflisten
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ secrets.ORG_README_TOKEN }}
         run: |
           gh api orgs/Novotechnik/repos --jq '.[].name'
       
       - name: Repository testen
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ secrets.ORG_README_TOKEN }}
         run: |
           gh api repos/Novotechnik/p00753_tf1
       
       - name: GitHub CLI testen
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ secrets.ORG_README_TOKEN }}
         run: |
           gh api repos/Novotechnik/p00753_tf1/properties/values
           
