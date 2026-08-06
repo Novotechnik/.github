@@ -36,6 +36,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.ORG_PROFILE_TOKEN }}
         run: |
+          gh repo list Novotechnik --limit 100
           gh api orgs/Novotechnik/repos --jq '.[].name'
       
       - name: Repository testen
