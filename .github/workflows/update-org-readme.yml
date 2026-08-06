@@ -28,7 +28,7 @@ jobs:
 
       - name: Token prüfen
         env:
-          GH_TOKEN: ${{ secrets.ORF_PROFILE_TOKEN }}
+          GH_TOKEN: ${{ secrets.ORG_PROFILE_TOKEN }}
         run: |
           gh auth status
 
