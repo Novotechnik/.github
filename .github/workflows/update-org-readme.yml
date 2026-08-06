@@ -26,6 +26,12 @@ jobs:
       - name: Repository auschecken
         uses: actions/checkout@v4
 
+      - name: Token prüfen
+        env:
+          GH_TOKEN: ${{ secrets.ORF_PROFILE_TOKEN }}
+        run: |
+          gh auth status
+
       - name: Repositories auflisten
         env:
           GH_TOKEN: ${{ secrets.ORG_PROFILE_TOKEN }}
