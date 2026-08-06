@@ -25,7 +25,6 @@ jobs:
     steps:
       - name: Repository auschecken
         uses: actions/checkout@v4
-################################################################################
     # ==========================================================================
     # Debugging Code
     # =========================================================================
@@ -47,67 +46,39 @@ jobs:
           GH_TOKEN: ${{ secrets.ORG_PROFILE_TOKEN }}
         run: |
           gh api repos/Novotechnik/p00753_tf1
+          gh api repos/Novotechnik/p00753_tf1/properties/values
       
       - name: GitHub CLI testen
         env:
           GH_TOKEN: ${{ secrets.ORG_PROFILE_TOKEN }}
         run: |
           gh api repos/Novotechnik/p00753_tf1/properties/values
-    # ==========================================================================
-    # ...
-    # ==========================================================================
+
       - name: Kategorie auslesen
         env:
           GH_TOKEN: ${{ secrets.ORG_PROFILE_TOKEN }}
         run: |
           gh api repos/Novotechnik/p00753_tf1/properties/values
+
     # ==========================================================================
     # README Erzeugen
     # ==========================================================================          
-      - name: README erzeugen
-        run: |
-          cat > profile/README.md << 'EOF'
-           # Novotechnik GitHub
+      # - name: README erzeugen
+      #   env:
+      #     GH_TOKEN: ${{ secrets.ORG_PROFILE_TOKEN }}
+      #   run: |
+      #     python3 scripts/generate_readme.py
 
-           Willkommen in der GitHub Organisation
+      # - name: Commit und Push
+      #   run: |
+      #     git config user.name "github-actions"
+      #     git config user.email "github-actions@github.com"
 
-           ## 🚀 Firmware
-           - https://github.com/Novotechnik/p00753_tf1
+      #     git add profile/README.md
 
-           ## 🤖 Jenkins
-           - https://github.com/Novotechnik/cicd-jenkins-sharedlib-codebeamer
-           - https://github.com/Novotechnik/cicd-jenkins-sharedlib-docker
-           - https://github.com/Novotechnik/cicd-jenkins-sharedlib-jenkins
-
-           ## 🐳 Docker
-           - https://github.com/Novotechnik/cicd-cmakes
-           - https://github.com/Novotechnik/cicd-docker-compilers
-           - https://github.com/Novotechnik/cicd-docker-packages
-           - https://github.com/Novotechnik/cicd-docker-packages
-           - https://github.com/Novotechnik/docker_images_compiler_gnu_arm_5_4
-
-           ## 🛠️ Tools
-           - https://github.com/Novotechnik/
-
-           ## 🌐 Extern
-           - https://github.com/Novotechnik/
-
-           ## 📌 Sonstiges
-           - https://github.com/Novotechnik/
-          
-           ## ✔️ Quality
-           - https://github.com/Novotechnik/
-
-      - name: Commit und Push
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-
-          git add profile/README.md
-
-          if git diff --staged --quiet; then
-            echo "Keine Änderungen."
-          else
-            git commit -m "Update Organisation README"
-           git push
-          fi
+      #     if git diff --staged --quiet; then
+      #       echo "Keine Änderungen."
+      #     else
+      #       git commit -m "Update Organisation README"
+      #      git push
+      #     fi
