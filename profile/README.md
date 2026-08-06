@@ -25,6 +25,6 @@
 
  ## 📌 Sonstiges
  - https://github.com/Novotechnik/
- 
- ## ✔️ Qualität
+
+ ## ✔️ Quality
  - https://github.com/Novotechnik/
