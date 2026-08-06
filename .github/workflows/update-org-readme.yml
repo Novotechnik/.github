@@ -25,7 +25,10 @@ jobs:
     steps:
       - name: Repository auschecken
         uses: actions/checkout@v4
-
+################################################################################
+    # ==========================================================================
+    # Debugging Code
+    # =========================================================================
       - name: Token prüfen
         env:
           GH_TOKEN: ${{ secrets.ORG_PROFILE_TOKEN }}
@@ -50,7 +53,17 @@ jobs:
           GH_TOKEN: ${{ secrets.ORG_PROFILE_TOKEN }}
         run: |
           gh api repos/Novotechnik/p00753_tf1/properties/values
-          
+    # ==========================================================================
+    # ...
+    # ==========================================================================
+      - name: Kategorie auslesen
+        env:
+          GH_TOKEN: ${{ secrets.ORG_PROFILE_TOKEN }}
+        run: |
+          gh api repos/Novotechnik/p00753_tf1/properties/values
+    # ==========================================================================
+    # README Erzeugen
+    # ==========================================================================          
       - name: README erzeugen
         run: |
           cat > profile/README.md << 'EOF'
