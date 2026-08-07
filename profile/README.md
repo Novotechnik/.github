@@ -5,10 +5,11 @@ Willkommen in der GitHub Organisation
 ## 🚀 Firmware
 
 - [p00753_tf1](https://github.com/Novotechnik/p00753_tf1)
-    - Software für den induktiven Wegaufnehmer TF1.
+    - Software für den induktiven Wegaufnehmer TF1. Absoluter Wegaufnehmer - Induktives Messprinzip - berührungslose Positionserfassung
     - 🌐 [Produktseite](https://www.novotechnik.de/produkt/tf1)
 - [P01095---RFC-48](https://github.com/Novotechnik/P01095---RFC-48)
-    - RFC-48 4. Generation
+    - Firmware für den RFC-48 4. Generation. Absolut messender, berührungsloser NOVOHALL Winkelsensor.
+    - 🌐 [Produktseite](https://www.novotechnik.de/produkt/rfc-4800/)
  
 ## 🤖 Jenkins
 
