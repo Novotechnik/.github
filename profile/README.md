@@ -38,7 +38,7 @@ Willkommen in der GitHub Organisation
 
 ## 🐳 Docker
 
-### 📂 Dockerfile
+### 📜 Dockerfile
 
 - [dockerfile](https://github.com/Novotechnik/dockerfile)
     - ℹ️ Dockerfile Templates
