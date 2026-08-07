@@ -44,6 +44,7 @@ CATEGORY_ICONS = {
 
 SUBCATEGORY_ICONS = {
     "Compiler"       : "⚙️",
+    "Dockerfile"     : "📜",
     "Hall"           : "🧲",
     "Images"         : "📦",
     "Jenkinsfile"    : "📜",
