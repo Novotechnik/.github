@@ -176,10 +176,10 @@ def create_repository_list(_repositories: list[dict] | None = None) -> str:
                 f"  - {description}"
             )
         
-            if homepage:
-                lines.append(
-                    f"  -🌐 {homepage}"
-                )
+        if homepage:
+            lines.append(
+                f"  -🌐 {homepage}"
+            )
 
     repoList = "\n".join(lines)
 
