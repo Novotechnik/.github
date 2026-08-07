@@ -173,15 +173,13 @@ def create_repository_list(_repositories: list[dict] | None = None) -> str:
 
         if description:
             lines.append(
-                f"  - {description}"
+                f"    - {description}"
             )
         
         if homepage:
             lines.append(
-                f"  -🌐 {homepage}"
+                f"    - 🌐 [Produktseite] {homepage}"
             )
-
-        lines.append("")
 
     repoList = "\n".join(lines)
 
@@ -241,13 +239,9 @@ def write_readme(_content: str = "") -> None:
     @return  'None'
     '''
 
-    print(">>> Content = \n", _content)
-
     readmeFile = Path("profile/README.md")
 
     readmeFile.write_text(_content, encoding="utf-8")
-
-    print(">>> readmeFile = \n", readmeFile.resolve())
 
 ##
 def main():
