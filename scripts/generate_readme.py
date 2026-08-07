@@ -68,22 +68,20 @@ def get_repositories(_organization: str = "") -> list:
         "name,description"
     ]
 
-    repos = subprocess.check_output(githubCommand, text=True)
+    output = subprocess.check_output(githubCommand, text=True)
 
-    reposJSON = json.loads(repos)
+    repos = json.loads(output)
 
-    return reposJSON
+    return repos
 
 ##
-def get_repository_category(_repository: str = "") -> str:
+def get_repository_data(_repository: str = "") -> str:
     '''
-    @brief    Liest die Custom Property 'Kategorie' des übergebenem Repositories
-              aus.
+    @brief    Liest die Repository Details aus.
 
-    @param [in]    '_repository'      Wir wollen die Proberties dieses Repos 
-                                      haben!
-
-    @return  'String'    Proberty Daten.
+    @param [in]    '_repository'    Aus diesem Repository soll ausgelesen werden
+    
+    @return  'String'    Repository Daten.
     '''
 
     githubCommand = [
@@ -92,17 +90,11 @@ def get_repository_category(_repository: str = "") -> str:
         f"repos/{ORGANIZATION}/{_repository}"
     ]
 
-    repoData = subprocess.check_output(githubCommand, text=True)
+    output = subprocess.check_output(githubCommand, text=True)
 
-    repoDataJSON = json.loads(repoData)
-
-    properties = (
-                    repoDataJSON
-                    .get("custom_properties", {})
-                    .get("Kategorie", "Sonstiges")
-    )
+    repoData = json.loads(output)
     
-    return properties
+    return repoData
 
 ##
 def group_repositories_by_category(_repositories: list[dict]) -> defaultdict[str, list[dict]]:
@@ -117,11 +109,18 @@ def group_repositories_by_category(_repositories: list[dict]) -> defaultdict[str
 
     grouped = defaultdict(list)
 
+
     for repository in _repositories:
 
-        category = get_repository_category(repository["name"])
+        repoData = get_repository_data(repository["name"])
 
-        grouped[category].append(repository)
+        category = (
+            repoData
+            .get("custom_properties", {})
+            .get("Kategorie", "Sonstiges")
+        )
+
+        grouped[category].append(repoData)
 
     return grouped
 
@@ -165,6 +164,7 @@ def create_repository_list(_repositories: list[dict] | None = None) -> str:
         name = repository["name"]
 
         description = repository.get("description", "")
+        homepage    = repository.get("homepage", "")
 
         lines.append(
             f"- [{name}]"
@@ -174,6 +174,11 @@ def create_repository_list(_repositories: list[dict] | None = None) -> str:
         if description:
             lines.append(
                 f"  - {description}"
+            )
+        
+        if homepage:
+            lines.append(
+                f"  -🌐 {homepage}"
             )
 
     repoList = "\n".join(lines)
