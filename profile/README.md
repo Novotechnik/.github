@@ -27,11 +27,11 @@ Willkommen in der GitHub Organisation
 
 ### 📚 Shared Library
 
-- [cicd-jenkins-sharedlib-codebeamer](https://github.com/Novotechnik/cicd-jenkins-sharedlib-codebeamer)
+- [sharedlib-codebeamer](https://github.com/Novotechnik/sharedlib-codebeamer)
     - ℹ️ Jenkins Shared-Library mit Codebeamer spezifischen (Hilfs-) Funktionen.
-- [cicd-jenkins-sharedlib-docker](https://github.com/Novotechnik/cicd-jenkins-sharedlib-docker)
+- [sharedlib-docker](https://github.com/Novotechnik/sharedlib-docker)
     - ℹ️ Jenkins Shared-Library mit Docker spezifischen (Hilfs-) Funktionen
-- [cicd-jenkins-sharedlib-jenkins](https://github.com/Novotechnik/cicd-jenkins-sharedlib-jenkins)
+- [sharedlib-jenkins](https://github.com/Novotechnik/sharedlib-jenkins)
     - ℹ️ Jenkins Shared-Library mit Jenkins spezifischen (Hilfs-) Funktionen.
 
 
