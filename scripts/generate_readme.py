@@ -241,13 +241,13 @@ def write_readme(_content: str = "") -> None:
     @return  'None'
     '''
 
-    print(">>> Content = \n" _content)
+    print(">>> Content = \n", _content)
 
     readmeFile = Path("profile/README.md")
 
     readmeFile.write_text(_content, encoding="utf-8")
 
-    print(">>> readmeFile = \n" readmeFile.resolve())
+    print(">>> readmeFile = \n", readmeFile.resolve())
 
 ##
 def main():
