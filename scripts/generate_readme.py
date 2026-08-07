@@ -45,8 +45,10 @@ CATEGORY_ICONS = {
 SUBCATEGORY_ICONS = {
     "Compiler"       : "⚙️",
     "Hall"           : "🧲",
+    "Images"         : "📦",
     "Linear"         : "📏",
     "Rotativ"        : "🔄",
+    "Sources"        : "🔗",
     "Shared Library" : "📚",
     "Template"       : "📄"
 }
@@ -113,6 +115,39 @@ def get_repository_property(
     return property
 
 ##
+def get_repository_subcategory(
+                        _repository: str = "",
+                            _category: str = "") -> str:
+    '''
+    @brief    Ermittelt die Unterkategorie eines Repositories abhängig von
+              dessen Hauptkategorie.
+
+    @param [in]    '_repository'    Aus diesem Repository soll ausgelesen werden
+    @param [in]    '_category'      Ermittle die Unterkategorien zu dieser
+                                    Hauptkategorie.
+
+    @return  'String'    Unterkategorie.
+    '''
+
+    subcategory = ""
+
+    match _category:
+
+        case "Firmware":
+            subcategory = get_repository_property(_repository, "Sensortyp")
+
+        case "Docker":
+            subcategory = get_repository_property(_repository, "Docker")
+
+        case "Jenkins":
+            subcategory = get_repository_property(_repository, "Jenkins")
+
+        case _:
+            subcategory = "Allgemein"
+
+    return subcategory
+
+##
 def group_repositories(
         _repositories: list[dict]) -> defaultdict[str, defaultdict[str, list[dict]]]:
     '''
@@ -133,10 +168,10 @@ def group_repositories(
 
         category = get_repository_property(repository["name"], "Kategorie")
 
-        subcategory = get_repository_property(repository["name"], "Untergruppe")
-
         if not category:
             category = "Sonstoges"
+
+        subcategory = get_repository_subcategory(repository["name"], category)
         
         if not subcategory:
             subcategory = "Allgemein"
@@ -233,7 +268,9 @@ def render_template(
             + "}}"
         )
         
-        section = (f"## {icon} {category}\n\n")
+        section = (
+            f"## {icon} {category}\n\n"
+        )
 
         subcategories = _groupedRepos.get(category, {})
 
@@ -242,14 +279,13 @@ def render_template(
         else:
             for subcategory in sorted(subcategories.keys()):
 
-                subcategoryIcon = (
-                    SUBCATEGORY_ICONS.get(subcategory.upper()), 
-                    "📂"
+                subcategoryIcon = SUBCATEGORY_ICONS.get(subcategory, "📂")
+
+                section += (
+                    f"### {subcategoryIcon }{subcategory}\n\n"
                 )
 
-                section += (f"### {subcategoryIcon }{subcategory}\n\n")
-
-                section += (create_repository_list(subcategories[subcategory]))
+                section += create_repository_list(subcategories[subcategory])
 
                 section += "\n\n"
 
