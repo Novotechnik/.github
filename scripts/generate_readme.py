@@ -42,6 +42,15 @@ CATEGORY_ICONS = {
     "Quality"   : "✔️"
 }
 
+SUBCATEGORY_ICONS = {
+    "Compiler"       : "⚙️",
+    "Hall"           : "🧲",
+    "Linear"         : "📏",
+    "Rotativ"        : "🔄",
+    "Shared Library" : "📚",
+    "Template"       : "📄"
+}
+
 ORGANIZATION = "Novotechnik"    #!< Entsprechend der GitHub Ogranisation.
 
 # ==============================================================================
@@ -75,13 +84,16 @@ def get_repositories(_organization: str = "") -> list:
     return repos
 
 ##
-def get_repository_data(_repository: str = "") -> str:
+def get_repository_property(
+                        _repository: str = "",
+                            _property: str = "") -> str:
     '''
-    @brief    Liest die Repository Details aus.
+    @brief    Liest eine Custom Property eines Repositories aus.
 
     @param [in]    '_repository'    Aus diesem Repository soll ausgelesen werden
-    
-    @return  'String'    Repository Daten.
+    @param [in]    '_property'      Diese Property wollen wir ausgelesen haben.
+
+    @return  'String'    Repository Property.
     '''
 
     githubCommand = [
@@ -92,14 +104,19 @@ def get_repository_data(_repository: str = "") -> str:
 
     output = subprocess.check_output(githubCommand, text=True)
 
-    repoData = json.loads(output)
+    property = (
+        json.loads(output)
+        .get("custom_properties", {})
+        .get(_property, "")
+    )
     
-    return repoData
+    return property
 
 ##
-def group_repositories_by_category(_repositories: list[dict]) -> defaultdict[str, list[dict]]:
+def group_repositories(
+        _repositories: list[dict]) -> defaultdict[str, defaultdict[str, list[dict]]]:
     '''
-    @brief    Gruppiert Repositories anhand der Kategorie.
+    @brief    Gruppiert Repositories nach Kategorie und Untergruppe.
 
     @param [in]    '_repositories'    Diese Repos sollen alle gruppiert werden.
 
@@ -107,20 +124,24 @@ def group_repositories_by_category(_repositories: list[dict]) -> defaultdict[str
                                                Repos
     '''
 
-    grouped = defaultdict(list)
+    grouped = defaultdict(
+        lambda: defaultdict(list)
+    )
 
 
     for repository in _repositories:
 
-        repoData = get_repository_data(repository["name"])
+        category = get_repository_property(repository["name"], "Kategorie")
 
-        category = (
-            repoData
-            .get("custom_properties", {})
-            .get("Kategorie", "Sonstiges")
-        )
+        subcategory = get_repository_property(repository["name"], "Untergruppe")
 
-        grouped[category].append(repoData)
+        if not category:
+            category = "Sonstoges"
+        
+        if not subcategory:
+            subcategory = "Allgemein"
+
+        grouped[category][subcategory].append(repository)
 
     return grouped
 
@@ -173,7 +194,7 @@ def create_repository_list(_repositories: list[dict] | None = None) -> str:
 
         if description:
             lines.append(
-                f"    - {description}"
+                f"    - 📜 {description}"
             )
         
         if homepage:
@@ -181,11 +202,6 @@ def create_repository_list(_repositories: list[dict] | None = None) -> str:
                 f"    - 🌐 [Produktseite]"
                 f"({homepage})"
             )
-        
-        # if homepage:
-        #     lines.append(
-        #         f"    - 🌐 [Produktseite] {homepage}"
-        #     )
 
     repoList = "\n".join(lines)
 
@@ -216,15 +232,26 @@ def render_template(
             + category.upper()
             + "}}"
         )
-
-        repositories = _groupedRepos.get(category, [])
         
         section = (f"## {icon} {category}\n\n")
 
-        if repositories:
-            section += create_repository_list(repositories)
+        subcategories = _groupedRepos.get(category, {})
+
+        if not subcategories:
+            section += "_Keine Einträge_\n\n"
         else:
-            section += "_Keine Einträge_"
+            for subcategory in sorted(subcategories.keys()):
+
+                subcategoryIcon = (
+                    SUBCATEGORY_ICONS.get(subcategory.upper()), 
+                    "📂"
+                )
+
+                section += (f"### {subcategoryIcon }{subcategory}\n\n")
+
+                section += (create_repository_list(subcategories[subcategory]))
+
+                section += "\n\n"
 
         overviewPage = overviewPage.replace(placeholder, section)
     
@@ -262,7 +289,7 @@ def main():
     
     repositories = get_repositories(ORGANIZATION)
 
-    groupedRepositories = group_repositories_by_category(repositories)
+    groupedRepositories = group_repositories(repositories)
 
     template = load_template()
 
