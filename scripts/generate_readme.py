@@ -69,11 +69,12 @@ def get_repositories(_organization: str = "") -> list:
     ]
 
     repos = subprocess.check_output(githubCommand, text=True)
+
     reposJSON = json.loads(repos)
 
     return reposJSON
 
-
+##
 def get_repository_category(_repository: str = "") -> str:
     '''
     @brief    Liest die Custom Property 'Kategorie' des übergebenem Repositories
@@ -92,6 +93,7 @@ def get_repository_category(_repository: str = "") -> str:
     ]
 
     repoData = subprocess.check_output(githubCommand, text=True)
+
     repoDataJSON = json.loads(repoData)
 
     properties = (
@@ -102,7 +104,7 @@ def get_repository_category(_repository: str = "") -> str:
     
     return properties
 
-
+##
 def group_repositories_by_category(_repositories: list[dict]) -> defaultdict[str, list[dict]]:
     '''
     @brief    Gruppiert Repositories anhand der Kategorie.
@@ -116,12 +118,14 @@ def group_repositories_by_category(_repositories: list[dict]) -> defaultdict[str
     grouped = defaultdict(list)
 
     for repository in _repositories:
+
         category = get_repository_category(repository["name"])
+
         grouped[category].append(repository)
 
     return grouped
 
-
+##
 def load_template() -> str:
     '''
     @brief    Lädt das README.md Template.
@@ -137,7 +141,7 @@ def load_template() -> str:
 
     return template
 
-
+##
 def create_repository_list(_repositories: list[dict] | None = None) -> str:
     '''
     @brief    Aus einer Liste von GitHub-Repositories wird nun eine formatierte
@@ -159,6 +163,7 @@ def create_repository_list(_repositories: list[dict] | None = None) -> str:
             key=lambda repo: repo["name"].lower()
     ):
         name = repository["name"]
+
         description = repository.get("description", "")
 
         lines.append(
@@ -175,7 +180,7 @@ def create_repository_list(_repositories: list[dict] | None = None) -> str:
 
     return repoList 
 
-
+##
 def render_template(
                 _template: str,
                     _groupedRepos: defaultdict[str, list[dict]]) -> str:
@@ -191,7 +196,10 @@ def render_template(
 
     overviewPage = _template
 
-    for category, icon in CATEGORY_ICONS.items():
+    for category in CATEGORY_ORDER:
+
+        icon = CATEGORY_ICONS.get(category, "")
+        
         placeholder = (
             "{{"
             + category.upper()
@@ -199,6 +207,7 @@ def render_template(
         )
 
         repositories = _groupedRepos.get(category, [])
+        
         section = (f"## {icon} {category}\n\n")
 
         if repositories:
@@ -210,7 +219,7 @@ def render_template(
     
     return overviewPage
 
-
+##
 def write_readme(_content: str = "") -> None:
     '''
     @brief    Schreibt die fertige REDME.md.
@@ -229,14 +238,7 @@ def write_readme(_content: str = "") -> None:
 
     readmeFile.write_text(_content, encoding="utf-8")
 
-# ==============================================================================
-# Classes
-# ==============================================================================
-
-# ==============================================================================
-# Script
-# ==============================================================================
-
+##
 def main():
     '''
     @brief    Hier lesen wir alle verfügbaren Repositories ein, die in unserem
@@ -246,11 +248,24 @@ def main():
 
     @return "repos/Novotechnik/.github/profile/README.md"
     '''
+    
     repositories = get_repositories(ORGANIZATION)
-    groupedRepositorie = group_repositories_by_category(repositories)
+
+    groupedRepositories = group_repositories_by_category(repositories)
+
     template = load_template()
-    overviewPage = render_template(template, groupedRepositories)
-    write_readme(overviewPage)
+
+    githubOverviewPage = render_template(template, groupedRepositories)
+
+    write_readme(githubOverviewPage)
+
+# ==============================================================================
+# Classes
+# ==============================================================================
+
+# ==============================================================================
+# Script
+# ==============================================================================
 
 if __name__ == "__main__":
     main()
