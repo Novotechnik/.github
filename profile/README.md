@@ -5,7 +5,7 @@ Willkommen in der GitHub Organisation
 ## 🚀 Firmware
 
 - [p00753_tf1](https://github.com/Novotechnik/p00753_tf1)
-  - Software für den induktiven Wegaufnehmer (https://www.novotechnik.de/produkt/tf1/)
+  - Software für den induktiven Wegaufnehmer TF1.
   -🌐 https://www.novotechnik.de/produkt/tf1
 - [P01095---RFC-48](https://github.com/Novotechnik/P01095---RFC-48)
   - RFC-48 4. Generation
