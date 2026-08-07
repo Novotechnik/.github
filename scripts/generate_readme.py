@@ -46,6 +46,7 @@ SUBCATEGORY_ICONS = {
     "Compiler"       : "⚙️",
     "Hall"           : "🧲",
     "Images"         : "📦",
+    "Jenkinsfile"    : "📜",
     "Linear"         : "📏",
     "Rotativ"        : "🔄",
     "Sources"        : "🔗",
@@ -115,6 +116,28 @@ def get_repository_property(
     return property
 
 ##
+def get_repository_data(_repository: str = "") -> dict:
+    '''
+    @brief    Liest Repository Informationen aus.
+
+    @param [in]    '_repository'    Aus diesem Repository soll ausgelesen werden
+
+    @return  'String'    Repository Daten.
+    '''
+
+    githubCommand = [
+        "gh",
+        "api",
+        f"repos/{ORGANIZATION}/{_repository}"
+    ]
+
+    output = subprocess.check_output(githubCommand, text=True)
+
+    data = json.loads(output)
+
+    return data
+
+##
 def get_repository_subcategory(
                         _repository: str = "",
                             _category: str = "") -> str:
@@ -166,17 +189,19 @@ def group_repositories(
 
     for repository in _repositories:
 
+        repoData = get_repository_data(repository["name"])
+
         category = get_repository_property(repository["name"], "Kategorie")
 
         if not category:
-            category = "Sonstoges"
+            category = "Sonstiges"
 
         subcategory = get_repository_subcategory(repository["name"], category)
         
         if not subcategory:
             subcategory = "Allgemein"
 
-        grouped[category][subcategory].append(repository)
+        grouped[category][subcategory].append(repoData)
 
     return grouped
 
@@ -229,7 +254,7 @@ def create_repository_list(_repositories: list[dict] | None = None) -> str:
 
         if description:
             lines.append(
-                f"    - 📜 {description}"
+                f"    - ℹ️ {description}"
             )
         
         if homepage:
@@ -282,7 +307,7 @@ def render_template(
                 subcategoryIcon = SUBCATEGORY_ICONS.get(subcategory, "📂")
 
                 section += (
-                    f"### {subcategoryIcon }{subcategory}\n\n"
+                    f"### {subcategoryIcon } {subcategory}\n\n"
                 )
 
                 section += create_repository_list(subcategories[subcategory])
