@@ -22,7 +22,7 @@ Willkommen in der GitHub Organisation
 
 ### 📜 Jenkinsfile
 
-- [cicd-jenkins-jenkinsfiles](https://github.com/Novotechnik/cicd-jenkins-jenkinsfiles)
+- [jenkinsfiles](https://github.com/Novotechnik/jenkinsfiles)
     - ℹ️ Jenkinsfile Templates
 
 ### 📚 Shared Library
@@ -40,20 +40,20 @@ Willkommen in der GitHub Organisation
 
 ### 📂 Dockerfile
 
-- [cicd-docker-dockerfiles](https://github.com/Novotechnik/cicd-docker-dockerfiles)
+- [dockerfile](https://github.com/Novotechnik/dockerfile)
     - ℹ️ Dockerfile Templates
 
 ### 📂 Idle
 
-- [cicd-cmakes](https://github.com/Novotechnik/cicd-cmakes)
+- [docker-cmakes](https://github.com/Novotechnik/docker-cmakes)
     - ℹ️ Shell-Skripte für CMAKE spezifische (Hilfs-) Funktionen.
-- [cicd-docker-compilers](https://github.com/Novotechnik/cicd-docker-compilers)
+- [docker-compilers](https://github.com/Novotechnik/docker-compilers)
     - ℹ️ Shell-Skripte für Compiler spezifische Themen innerhalb der Dockerfile
-- [cicd-docker-dockers](https://github.com/Novotechnik/cicd-docker-dockers)
+- [docker-dockers](https://github.com/Novotechnik/docker-dockers)
     - ℹ️ Shell-Skripte für Docker spezifische (Hilfs-) Funktionen innerhalb der Dockerfile.
-- [cicd-docker-packages](https://github.com/Novotechnik/cicd-docker-packages)
+- [docker-packages](https://github.com/Novotechnik/docker-packages)
     - ℹ️ Shell-Skripte für Paket spezifische Themen innerhalb der Dockerfile.
-- [cicd-docker-sources](https://github.com/Novotechnik/cicd-docker-sources)
+- [docker-sources](https://github.com/Novotechnik/docker-sources)
     - ℹ️ Etwaige (Quelle-) Dateien, die zur Containisierung von Arbeitsumgebungen gebraucht werden.
 
 ### 📦 Images
