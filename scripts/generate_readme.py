@@ -180,8 +180,11 @@ def create_repository_list(_repositories: list[dict] | None = None) -> str:
             lines.append(
                 f"  -🌐 {homepage}"
             )
+            
+        lines.append("")
 
     repoList = "\n".join(lines)
+    print(repoList)
 
     return repoList 
 
