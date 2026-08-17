@@ -63,6 +63,15 @@ Willkommen in der GitHub Organisation
     - ℹ️ Shell-Skripte für Paket spezifische Themen innerhalb der Dockerfile.
 
 
+
+## 🏗️ CMake
+
+### 📄 Skript
+
+- [cmake-cmakes](https://github.com/Novotechnik/cmake-cmakes)
+    - ℹ️ Shell-Skripte für CMAKE spezifische (Hilfs-) Funktionen.
+
+
  
 ## 🛠️ Tools
 
