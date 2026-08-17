@@ -26,6 +26,7 @@ CATEGORY_ORDER = [
     "Firmware",
     "Jenkins",
     "Docker",
+    "CMake",
     "Tools",
     "Extern",
     "Sonstiges",
@@ -36,6 +37,7 @@ CATEGORY_ICONS = {
     "Firmware"  : "🚀",
     "Jenkins"   : "🤖",
     "Docker"    : "🐳",
+    "CMake"     : "🏗️",
     "Tools"     : "🛠️",
     "Extern"    : "🌐",
     "Sonstiges" : "📌",
@@ -43,6 +45,7 @@ CATEGORY_ICONS = {
 }
 
 SUBCATEGORY_ICONS = {
+    "CMakeLists"     : "📜",
     "Compiler"       : "⚙️",
     "Dockerfile"     : "📜",
     "Hall"           : "🧲",
@@ -50,6 +53,7 @@ SUBCATEGORY_ICONS = {
     "Jenkinsfile"    : "📜",
     "Linear"         : "📏",
     "Rotativ"        : "🔄",
+    "Skript"         : "📄",
     "Sources"        : "🔗",
     "Shared Library" : "📚",
     "Template"       : "📄"
@@ -165,6 +169,9 @@ def get_repository_subcategory(
 
         case "Jenkins":
             subcategory = get_repository_property(_repository, "Jenkins")
+
+        case "CMake":
+            subcategory = get_repository_property(_repository, "CMake")
 
         case _:
             subcategory = "Allgemein"
@@ -342,7 +349,11 @@ def write_readme(_content: str = "") -> None:
 def main():
     '''
     @brief    Hier lesen wir alle verfügbaren Repositories ein, die in unserem
-              Organisations (Novotechnik) GitHub angelegt sind.
+              Organisations (Novotechnik) GitHub angelegt sind, ordnen diese
+              entsprechend ihrern Katergorien sowie Unterkategorien und befüllen
+              damit das Template zur Github-Overview-Page. Am Ende entsteht so
+              eine README.md, die genau beschreibt wie unsere GitHub-Organisations
+              Overview-Seite auszusehen hat.
     
     @param  'None'
 
