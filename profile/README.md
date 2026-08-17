@@ -43,11 +43,6 @@ Willkommen in der GitHub Organisation
 - [dockerfile](https://github.com/Novotechnik/dockerfile)
     - ℹ️ Dockerfile Templates
 
-### 📂 Idle
-
-- [docker-sources](https://github.com/Novotechnik/docker-sources)
-    - ℹ️ Etwaige (Quelle-) Dateien, die zur Containisierung von Arbeitsumgebungen gebraucht werden.
-
 ### 📦 Images
 
 - [docker_images_compiler_gnu_arm_5_4](https://github.com/Novotechnik/docker_images_compiler_gnu_arm_5_4)
@@ -61,6 +56,11 @@ Willkommen in der GitHub Organisation
     - ℹ️ Shell-Skripte für Docker spezifische (Hilfs-) Funktionen innerhalb der Dockerfile.
 - [docker-packages](https://github.com/Novotechnik/docker-packages)
     - ℹ️ Shell-Skripte für Paket spezifische Themen innerhalb der Dockerfile.
+
+### 🔗 Sources
+
+- [docker-sources](https://github.com/Novotechnik/docker-sources)
+    - ℹ️ Etwaige (Quelle-) Dateien, die zur Containisierung von Arbeitsumgebungen gebraucht werden.
 
 
 
@@ -87,7 +87,10 @@ _Keine Einträge_
  
 ## 📌 Sonstiges
 
-_Keine Einträge_
+### 📂 Allgemein
+
+- [.github](https://github.com/Novotechnik/.github)
+    - ℹ️ Überblick über alle Repositories
 
 
 
