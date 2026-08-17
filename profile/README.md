@@ -7,7 +7,7 @@ Willkommen in der GitHub Organisation
 ### 📏 Linear
 
 - [p00753_tf1](https://github.com/Novotechnik/p00753_tf1)
-    - ℹ️ Software für den induktiven Wegaufnehmer TF1. Absoluter Wegaufnehmer - Induktives Messprinzip - berührungslose Positionserfassung
+    - ℹ️ Software für den induktiven Wegaufnehmer TF1. Absoluter Wegaufnehmer, berührungslose Positionserfassung
     - 🌐 [Produktseite](https://www.novotechnik.de/produkt/tf1)
 
 ### 🔄 Rotativ
