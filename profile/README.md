@@ -22,7 +22,7 @@ Willkommen in der GitHub Organisation
 
 ### 📜 Jenkinsfile
 
-- [jenkinsfiles](https://github.com/Novotechnik/jenkinsfiles)
+- [jenkinsfile](https://github.com/Novotechnik/jenkinsfile)
     - ℹ️ Jenkinsfile Templates
 
 ### 📚 Shared Library
