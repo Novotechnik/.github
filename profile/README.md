@@ -54,6 +54,8 @@ Willkommen in der GitHub Organisation
     - ℹ️ Shell-Skripte für Compiler spezifische Themen innerhalb der Dockerfile
 - [docker-dockers](https://github.com/Novotechnik/docker-dockers)
     - ℹ️ Shell-Skripte für Docker spezifische (Hilfs-) Funktionen innerhalb der Dockerfile.
+- [docker-package-manager](https://github.com/Novotechnik/docker-package-manager)
+    - ℹ️ Shell-Skripte zur Installation von Paketen über den APT-Package-Manager
 - [docker-packages](https://github.com/Novotechnik/docker-packages)
     - ℹ️ Shell-Skripte für Paket spezifische Themen innerhalb der Dockerfile.
 
