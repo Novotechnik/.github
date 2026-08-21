@@ -73,6 +73,11 @@ Willkommen in der GitHub Organisation
 - [cmake-cmakes](https://github.com/Novotechnik/cmake-cmakes)
     - ℹ️ Shell-Skripte für CMAKE spezifische (Hilfs-) Funktionen.
 
+### 🔗 Sources
+
+- [cmake-sources](https://github.com/Novotechnik/cmake-sources)
+    - ℹ️ Etwaige (Quelle-) Dateien wie Toolchains für CMake Konfigurationen und Builds.
+
 
  
 ## 🛠️ Tools
