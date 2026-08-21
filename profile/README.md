@@ -52,7 +52,7 @@ Willkommen in der GitHub Organisation
 
 - [docker-compilers](https://github.com/Novotechnik/docker-compilers)
     - ℹ️ Shell-Skripte für Compiler spezifische Themen innerhalb der Dockerfile
-- [docker-dockers](https://github.com/Novotechnik/docker-dockers)
+- [docker-lib](https://github.com/Novotechnik/docker-lib)
     - ℹ️ Shell-Skripte für Docker spezifische (Hilfs-) Funktionen innerhalb der Dockerfile.
 - [docker-package-manager](https://github.com/Novotechnik/docker-package-manager)
     - ℹ️ Shell-Skripte zur Installation von Paketen über den APT-Package-Manager
@@ -70,7 +70,7 @@ Willkommen in der GitHub Organisation
 
 ### 📄 Skript
 
-- [cmake-cmakes](https://github.com/Novotechnik/cmake-cmakes)
+- [cmake-lib](https://github.com/Novotechnik/cmake-lib)
     - ℹ️ Shell-Skripte für CMAKE spezifische (Hilfs-) Funktionen.
 
 ### 🔗 Sources
