@@ -47,6 +47,7 @@ CATEGORY_ICONS = {
 SUBCATEGORY_ICONS = {
     "CMakeLists"     : "📜",
     "Compiler"       : "⚙️",
+    "Demonstrator"   : "🔬",
     "Dockerfile"     : "📜",
     "Hall"           : "🧲",
     "Images"         : "📦",
@@ -172,6 +173,9 @@ def get_repository_subcategory(
 
         case "CMake":
             subcategory = get_repository_property(_repository, "CMake")
+
+        case "Extern":
+            subcategory = get_repository_property(_repository, "Extern")
 
         case _:
             subcategory = "Allgemein"
