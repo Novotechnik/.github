@@ -88,7 +88,10 @@ _Keine Einträge_
  
 ## 🌐 Extern
 
-_Keine Einträge_
+### 📂 Allgemein
+
+- [extern-novo-demonstartor](https://github.com/Novotechnik/extern-novo-demonstartor)
+    - ℹ️ Novotechnik Demonstrator.
 
 
  
