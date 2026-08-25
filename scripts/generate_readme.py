@@ -24,6 +24,7 @@ from typing import Any
 # ==============================================================================
 CATEGORY_ORDER = [
     "Firmware",
+    "Plattform",
     "Jenkins",
     "Docker",
     "CMake",
@@ -35,6 +36,7 @@ CATEGORY_ORDER = [
 
 CATEGORY_ICONS = {
     "Firmware"  : "🚀",
+    "Platform"  : "🧱",
     "Jenkins"   : "🤖",
     "Docker"    : "🐳",
     "CMake"     : "🏗️",
@@ -45,19 +47,24 @@ CATEGORY_ICONS = {
 }
 
 SUBCATEGORY_ICONS = {
-    "CMakeLists"     : "📜",
-    "Compiler"       : "⚙️",
-    "Demonstrator"   : "🔬",
-    "Dockerfile"     : "📜",
-    "Hall"           : "🧲",
-    "Images"         : "📦",
-    "Jenkinsfile"    : "📜",
-    "Linear"         : "📏",
-    "Rotativ"        : "🔄",
-    "Skript"         : "📄",
-    "Sources"        : "🔗",
-    "Shared Library" : "📚",
-    "Template"       : "📄"
+    "Applikation-Modul : "⚙️",
+    "CMakeLists"       : "📜",
+    "Compiler"         : "⚙️",
+    "Demonstrator"     : "🔬",
+    "Dockerfile"       : "📜",
+    "Dokumentation"    : "📚",
+    "Hall"             : "🧲",
+    "HAL-Modul"        : "⚙️",
+    "Images"           : "📦",
+    "Jenkinsfile"      : "📜",
+    "Linear"           : "📏",
+    "Middleware-Module : "⚙️",
+    "Rotativ"          : "🔄",
+    "Skript"           : "📄",
+    "Sources"          : "🔗",
+    "Shared Library"   : "📚",
+    "Template"         : "📄",
+    "Treiber-Modul"    : "⚙️"
 }
 
 ORGANIZATION = "Novotechnik"    #!< Entsprechend der GitHub Ogranisation.
@@ -164,6 +171,9 @@ def get_repository_subcategory(
 
         case "Firmware":
             subcategory = get_repository_property(_repository, "Sensortyp")
+
+        case "Platform":
+            subcategory = get_repository_property(_repository, "Plattform")
 
         case "Docker":
             subcategory = get_repository_property(_repository, "Docker")
