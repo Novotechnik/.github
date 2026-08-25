@@ -17,6 +17,8 @@ Willkommen in der GitHub Organisation
     - 🌐 [Produktseite](https://www.novotechnik.de/produkt/rfc-4800/)
 
 
+
+{{PLATFORM}}
  
 ## 🤖 Jenkins
 
