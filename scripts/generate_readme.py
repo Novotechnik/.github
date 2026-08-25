@@ -47,24 +47,24 @@ CATEGORY_ICONS = {
 }
 
 SUBCATEGORY_ICONS = {
-    "Applikation-Modul : "⚙️",
-    "CMakeLists"       : "📜",
-    "Compiler"         : "⚙️",
-    "Demonstrator"     : "🔬",
-    "Dockerfile"       : "📜",
-    "Dokumentation"    : "📚",
-    "Hall"             : "🧲",
-    "HAL-Modul"        : "⚙️",
-    "Images"           : "📦",
-    "Jenkinsfile"      : "📜",
-    "Linear"           : "📏",
-    "Middleware-Module : "⚙️",
-    "Rotativ"          : "🔄",
-    "Skript"           : "📄",
-    "Sources"          : "🔗",
-    "Shared Library"   : "📚",
-    "Template"         : "📄",
-    "Treiber-Modul"    : "⚙️"
+    "Applikation-Modul" : "⚙️",
+    "CMakeLists"        : "📜",
+    "Compiler"          : "⚙️",
+    "Demonstrator"      : "🔬",
+    "Dockerfile"        : "📜",
+    "Dokumentation"     : "📚",
+    "Hall"              : "🧲",
+    "HAL-Modul"         : "⚙️",
+    "Images"            : "📦",
+    "Jenkinsfile"       : "📜",
+    "Linear"            : "📏",
+    "Middleware-Module" : "⚙️",
+    "Rotativ"           : "🔄",
+    "Skript"            : "📄",
+    "Sources"           : "🔗",
+    "Shared Library"    : "📚",
+    "Template"          : "📄",
+    "Treiber-Modul"     : "⚙️"
 }
 
 ORGANIZATION = "Novotechnik"    #!< Entsprechend der GitHub Ogranisation.
