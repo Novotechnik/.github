@@ -18,7 +18,14 @@ Willkommen in der GitHub Organisation
 
 
 
-{{PLATFORM}}
+## 🧱 Plattform
+
+### 📚 Dokumentation
+
+- [plattform_documents](https://github.com/Novotechnik/plattform_documents)
+    - ℹ️ Repository für die Plattform übergreifende Dokumentation.
+
+
  
 ## 🤖 Jenkins
 
