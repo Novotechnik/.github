@@ -36,7 +36,7 @@ CATEGORY_ORDER = [
 
 CATEGORY_ICONS = {
     "Firmware"  : "🚀",
-    "Platform"  : "🧱",
+    "Plattform" : "🧱",
     "Jenkins"   : "🤖",
     "Docker"    : "🐳",
     "CMake"     : "🏗️",
@@ -172,7 +172,7 @@ def get_repository_subcategory(
         case "Firmware":
             subcategory = get_repository_property(_repository, "Sensortyp")
 
-        case "Platform":
+        case "Plattform":
             subcategory = get_repository_property(_repository, "Plattform")
 
         case "Docker":
