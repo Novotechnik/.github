@@ -22,7 +22,7 @@ Willkommen in der GitHub Organisation
 
 ### 📚 Dokumentation
 
-- [plattform_documents](https://github.com/Novotechnik/plattform_documents)
+- [plattform-documents](https://github.com/Novotechnik/plattform-documents)
     - ℹ️ Repository für die Plattform übergreifende Dokumentation.
 
 
