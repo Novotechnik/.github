@@ -184,6 +184,9 @@ def get_repository_subcategory(
         case "CMake":
             subcategory = get_repository_property(_repository, "CMake")
 
+        case "Tools":
+            subcategory = get_repository_property(_repository, "Tools")
+
         case "Extern":
             subcategory = get_repository_property(_repository, "Extern")
 
