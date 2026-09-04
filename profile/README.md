@@ -91,7 +91,10 @@ Willkommen in der GitHub Organisation
  
 ## 🛠️ Tools
 
-_Keine Einträge_
+### 📂 Allgemein
+
+- [tool-sbom-generator](https://github.com/Novotechnik/tool-sbom-generator)
+    - ℹ️ Zur Erzeugung der Firmware SBOM sowie eines Release Manifests.
 
 
  
