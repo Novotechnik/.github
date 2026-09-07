@@ -54,6 +54,8 @@ Willkommen in der GitHub Organisation
 
 ### 📦 Images
 
+- [docker-images-compiler-microchip_xc-dsc-v3_21](https://github.com/Novotechnik/docker-images-compiler-microchip_xc-dsc-v3_21)
+    - ℹ️ Repository zum Erzeugen eines Docker IMages für den Compiler Microchip XC-DSC V3.21
 - [docker-images-compiler_gnu-arm_5_4](https://github.com/Novotechnik/docker-images-compiler_gnu-arm_5_4)
     - ℹ️ Repository zum Erzeugen eines Docker Images für den Compiler GNU-ARM_5.4-2016q3
 
