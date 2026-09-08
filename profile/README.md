@@ -69,6 +69,8 @@ Willkommen in der GitHub Organisation
     - ℹ️ Shell-Skripte zur Installation von Paketen über den APT-Package-Manager
 - [docker-packages](https://github.com/Novotechnik/docker-packages)
     - ℹ️ Shell-Skripte für Paket spezifische Themen innerhalb der Dockerfile.
+- [docker-toolchain](https://github.com/Novotechnik/docker-toolchain)
+    - ℹ️ Sammlung wiederverwendbarer Shell-Skripte zur Installation und Konfiguration von Compiler-Toolchains, Device Family Packs (DFPs) und weiteren Werkzeugen für die Embedded-Entwicklung in Docker-Images.
 
 ### 🔗 Sources
 
