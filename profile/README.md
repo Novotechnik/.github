@@ -61,8 +61,6 @@ Willkommen in der GitHub Organisation
 
 ### 📄 Skript
 
-- [docker-compilers](https://github.com/Novotechnik/docker-compilers)
-    - ℹ️ Shell-Skripte für Compiler spezifische Themen innerhalb der Dockerfile
 - [docker-lib](https://github.com/Novotechnik/docker-lib)
     - ℹ️ Shell-Skripte für Docker spezifische (Hilfs-) Funktionen innerhalb der Dockerfile.
 - [docker-package-manager](https://github.com/Novotechnik/docker-package-manager)
