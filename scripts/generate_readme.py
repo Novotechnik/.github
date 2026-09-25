@@ -43,7 +43,8 @@ CATEGORY_ICONS = {
     "Tools"     : "🛠️",
     "Extern"    : "🌐",
     "Sonstiges" : "📌",
-    "Quality"   : "✔️"
+    "Quality"   : "✔️",
+    "3rd-Party" : "📚"
 }
 
 SUBCATEGORY_ICONS = {
@@ -63,6 +64,7 @@ SUBCATEGORY_ICONS = {
     "Skript"            : "📄",
     "Sources"           : "🔗",
     "Shared Library"    : "📚",
+    "Connectivity"      : "📡",
     "Template"          : "📄",
     "Treiber-Modul"     : "⚙️"
 }
@@ -189,6 +191,9 @@ def get_repository_subcategory(
 
         case "Extern":
             subcategory = get_repository_property(_repository, "Extern")
+
+        case "3rd-Party":
+            subcategory = get_repository_property(_repository, "3rd-Party")
 
         case _:
             subcategory = "Allgemein"
