@@ -31,7 +31,8 @@ CATEGORY_ORDER = [
     "Tools",
     "Extern",
     "Sonstiges",
-    "Quality"
+    "Quality",
+    "3rd-Party"
 ]
 
 CATEGORY_ICONS = {
