@@ -124,4 +124,15 @@ _Keine Einträge_
 
 
 
-{{3rd-Party}}
+## 📚 3rd-Party
+
+### 📡 Connectivity
+
+- [connectivity-canopen](https://github.com/Novotechnik/connectivity-canopen)
+    - ℹ️ Novotechnik Stack for CANopen with third-party-stack from PORT.
+- [connectivity-iolink](https://github.com/Novotechnik/connectivity-iolink)
+    - ℹ️ Novotechnik Stack for IO-Link with third-party-stack from IQ².
+- [connectivity-j1939](https://github.com/Novotechnik/connectivity-j1939)
+    - ℹ️ Novotechnik Stack for CAN SAE J1939 with third-party-stack from EMTAS.
+
+
