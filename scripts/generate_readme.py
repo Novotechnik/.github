@@ -51,6 +51,7 @@ SUBCATEGORY_ICONS = {
     "Applikation-Modul" : "⚙️",
     "CMakeLists"        : "📜",
     "Compiler"          : "⚙️",
+    "Connectivity"      : "📡",
     "Demonstrator"      : "🔬",
     "Dockerfile"        : "📜",
     "Dokumentation"     : "📚",
@@ -64,7 +65,6 @@ SUBCATEGORY_ICONS = {
     "Skript"            : "📄",
     "Sources"           : "🔗",
     "Shared Library"    : "📚",
-    "Connectivity"      : "📡",
     "Template"          : "📄",
     "Treiber-Modul"     : "⚙️"
 }
