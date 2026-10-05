@@ -17,6 +17,7 @@ Willkommen in der GitHub Organisation
     - 🌐 [Produktseite](https://www.novotechnik.de/produkt/rfc-4800/)
 - [p01095-rfc_4gen](https://github.com/Novotechnik/p01095-rfc_4gen)
     - ℹ️ Firmware für den RFC-48 4. Generation. Absolut messender, berührungsloser NOVOHALL Winkelsensor.
+    - 🌐 [Produktseite](https://www.novotechnik.de/produkt/rfc-4800/)
 
 
 
