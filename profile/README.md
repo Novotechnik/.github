@@ -101,6 +101,12 @@ Willkommen in der GitHub Organisation
 - [tool-sbom-generator](https://github.com/Novotechnik/tool-sbom-generator)
     - ℹ️ Zur Erzeugung der Firmware SBOM sowie eines Release Manifests.
 
+### 📂 Sonstiges
+
+- [nt-versioninfo](https://github.com/Novotechnik/nt-versioninfo)
+    - ℹ️ Legacy Modul aus GitLab übernommen
+    - 🌐 [Produktseite](https://git.novo.local/es/submodules/versioninfo.git)
+
 
  
 ## 🌐 Extern
@@ -118,6 +124,9 @@ Willkommen in der GitHub Organisation
 
 - [.github](https://github.com/Novotechnik/.github)
     - ℹ️ Überblick über alle Repositories
+- [nt-library](https://github.com/Novotechnik/nt-library)
+    - ℹ️ Legacy Modul aus GitLab übernommen.
+    - 🌐 [Produktseite](https://git.novo.local/es/submodules/library.git)
 
 
 
