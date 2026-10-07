@@ -9,6 +9,8 @@ Willkommen in der GitHub Organisation
 - [p00753_tf1](https://github.com/Novotechnik/p00753_tf1)
     - ℹ️ Software für den induktiven Wegaufnehmer TF1. Absoluter Wegaufnehmer, berührungslose Positionserfassung
     - 🌐 [Produktseite](https://www.novotechnik.de/produkt/tf1)
+- [p01110-tg1_draft](https://github.com/Novotechnik/p01110-tg1_draft)
+    - ℹ️ Dies ist nur der erste Entwurf des Repositories für das TG1
 
 ### 🔄 Rotativ
 
