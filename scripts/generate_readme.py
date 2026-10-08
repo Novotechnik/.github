@@ -50,7 +50,7 @@ CATEGORY_ICONS = {
 
 SUBCATEGORY_ICONS = {
     "Applikation-Modul"     : "⚙️",
-    "Board-Support-Package" : "⚙️"
+    "Board-Support-Package" : "⚙️",
     "CMakeLists"            : "📜",
     "Commons"               : "⚙️",
     "Compiler"              : "⚙️",
@@ -58,7 +58,7 @@ SUBCATEGORY_ICONS = {
     "Demonstrator"          : "🔬",
     "Dockerfile"            : "📜",
     "Dokumentation"         : "📚",
-    "Driver"                : "⚙️"
+    "Driver"                : "⚙️",
     "Hall"                  : "🧲",
     "HAL"                   : "⚙️",
     "Images"                : "📦",
@@ -66,7 +66,7 @@ SUBCATEGORY_ICONS = {
     "Linear"                : "📏",
     "Middleware"            : "⚙️",
     "Rotativ"               : "🔄",
-    "Services"              : "⚙️"
+    "Services"              : "⚙️",
     "Skript"                : "📄",
     "Sources"               : "🔗",
     "Shared Library"        : "📚",
