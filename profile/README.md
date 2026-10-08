@@ -38,12 +38,12 @@ Willkommen in der GitHub Organisation
 ### ⚙️ Middleware
 
 - [mw_memory_manager](https://github.com/Novotechnik/mw_memory_manager)
-    - ℹ️ Middleware Module für den Memory Manager
+    - ℹ️ Middleware Modul für den Memory Manager
 
 ### ⚙️ Utils
 
 - [util_filter](https://github.com/Novotechnik/util_filter)
-    - ℹ️ Util Module mit diversen Filertn.
+    - ℹ️ Util Modul mit diversen Filtern.
 
 
  
