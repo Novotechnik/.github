@@ -35,6 +35,16 @@ Willkommen in der GitHub Organisation
 - [drv_gpio](https://github.com/Novotechnik/drv_gpio)
     - ℹ️ Treiber Modul für die GPIOs
 
+### ⚙️ Middleware
+
+- [mw_memory_manager](https://github.com/Novotechnik/mw_memory_manager)
+    - ℹ️ Middleware Module für den Memory Manager
+
+### ⚙️ Utils
+
+- [util_filter](https://github.com/Novotechnik/util_filter)
+    - ℹ️ Util Module mit diversen Filertn.
+
 
  
 ## 🤖 Jenkins
