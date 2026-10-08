@@ -30,6 +30,11 @@ Willkommen in der GitHub Organisation
 - [plattform-documents](https://github.com/Novotechnik/plattform-documents)
     - ℹ️ Repository für die Plattform übergreifende Dokumentation.
 
+### ⚙️ Treiber-Modul
+
+- [drv_gpio](https://github.com/Novotechnik/drv_gpio)
+    - ℹ️ Treiber Modul für die GPIOs
+
 
  
 ## 🤖 Jenkins
