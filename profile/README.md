@@ -25,6 +25,13 @@ Willkommen in der GitHub Organisation
 
 ## 🧱 Plattform
 
+### ⚙️ Commons
+
+- [common_definitions](https://github.com/Novotechnik/common_definitions)
+    - ℹ️ Allgemeine Defintionen.
+- [common_events](https://github.com/Novotechnik/common_events)
+    - ℹ️ Hier definieren wir Ereignis wie Fehler oder solche, die einen Zustandswechsel bewirken können.
+
 ### 📚 Dokumentation
 
 - [plattform-documents](https://github.com/Novotechnik/plattform-documents)
