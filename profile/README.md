@@ -151,6 +151,8 @@ Willkommen in der GitHub Organisation
 
 ### 📂 Allgemein
 
+- [.gitconfig](https://github.com/Novotechnik/.gitconfig)
+    - ℹ️ Allgemeine Git Konfigurationen
 - [.github](https://github.com/Novotechnik/.github)
     - ℹ️ Überblick über alle Repositories
 - [nt-library](https://github.com/Novotechnik/nt-library)
