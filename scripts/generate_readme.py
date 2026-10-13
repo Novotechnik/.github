@@ -49,7 +49,7 @@ CATEGORY_ICONS = {
 }
 
 SUBCATEGORY_ICONS = {
-    "Applikation-Modul"     : "⚙️",
+    "Application"           : "⚙️",
     "Board-Support-Package" : "⚙️",
     "CMakeLists"            : "📜",
     "Commons"               : "⚙️",
