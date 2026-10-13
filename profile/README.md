@@ -25,7 +25,7 @@ Willkommen in der GitHub Organisation
 
 ## 🧱 Plattform
 
-### 📂 Application
+### ⚙️ Application
 
 - [app_frontend](https://github.com/Novotechnik/app_frontend)
     - ℹ️ Applikations Modul für Frontend.
