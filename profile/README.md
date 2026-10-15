@@ -44,7 +44,7 @@ Willkommen in der GitHub Organisation
 
 ### ⚙️ Driver
 
-- [drv_gpio](https://github.com/Novotechnik/drv_gpio)
+- [drv_gpio_stm32](https://github.com/Novotechnik/drv_gpio_stm32)
     - ℹ️ Treiber Modul für die GPIOs
 
 ### ⚙️ Middleware
@@ -152,7 +152,7 @@ Willkommen in der GitHub Organisation
 ### 📂 Allgemein
 
 - [.gitconfig](https://github.com/Novotechnik/.gitconfig)
-    - ℹ️ Allgemeine Git Konfigurationen
+    - ℹ️ Allgemeine Git Konfigurationen und Alias.
 - [.github](https://github.com/Novotechnik/.github)
     - ℹ️ Überblick über alle Repositories
 - [nt-library](https://github.com/Novotechnik/nt-library)
