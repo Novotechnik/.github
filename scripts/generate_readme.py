@@ -71,6 +71,7 @@ SUBCATEGORY_ICONS = {
     "Sources"               : "🔗",
     "Shared Library"        : "📚",
     "Template"              : "📄",
+    "Testframework"         : "⚙️",
     "Utils"                 : "⚙️"
 }
 
