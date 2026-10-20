@@ -32,7 +32,8 @@ CATEGORY_ORDER = [
     "Extern",
     "Sonstiges",
     "Quality",
-    "3rd-Party"
+    "3rd-Party",
+    "TBM"
 ]
 
 CATEGORY_ICONS = {
@@ -45,7 +46,8 @@ CATEGORY_ICONS = {
     "Extern"    : "🌐",
     "Sonstiges" : "📌",
     "Quality"   : "✔️",
-    "3rd-Party" : "📚"
+    "3rd-Party" : "📚",
+    "TBM"       : "🛠️"
 }
 
 SUBCATEGORY_ICONS = {
@@ -200,6 +202,9 @@ def get_repository_subcategory(
 
         case "3rd-Party":
             subcategory = get_repository_property(_repository, "3rd-Party")
+
+        case "TBM":
+            subcategory = get_repository_property(_repository, "TBM")
 
         case _:
             subcategory = "Allgemein"
