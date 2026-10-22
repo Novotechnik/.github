@@ -25,12 +25,12 @@ Willkommen in der GitHub Organisation
 
 ## 🧱 Plattform
 
-### ⚙️ Application
+### 💼 Application
 
 - [app_frontend](https://github.com/Novotechnik/app_frontend)
     - ℹ️ Applikations Modul für Frontend.
 
-### ⚙️ Commons
+### 🧩 Commons
 
 - [common_definitions](https://github.com/Novotechnik/common_definitions)
     - ℹ️ Allgemeine Defintionen.
@@ -42,17 +42,17 @@ Willkommen in der GitHub Organisation
 - [plattform-documents](https://github.com/Novotechnik/plattform-documents)
     - ℹ️ Repository für die Plattform übergreifende Dokumentation.
 
-### ⚙️ Driver
+### 🔧 Driver
 
 - [drv_gpio_stm32](https://github.com/Novotechnik/drv_gpio_stm32)
     - ℹ️ Treiber Modul für die GPIOs
 
-### ⚙️ Middleware
+### 🔀 Middleware
 
 - [mw_memory_manager](https://github.com/Novotechnik/mw_memory_manager)
     - ℹ️ Middleware Modul für den Memory Manager
 
-### ⚙️ Utils
+### 🛠️ Utils
 
 - [util_filter](https://github.com/Novotechnik/util_filter)
     - ℹ️ Util Modul mit diversen Filtern.
@@ -84,14 +84,19 @@ Willkommen in der GitHub Organisation
 - [dockerfile](https://github.com/Novotechnik/dockerfile)
     - ℹ️ Dockerfile Templates
 
-### 📦 Images
+### 🖼️ Images
 
 - [docker-image-compiler-gnu-arm-5_4](https://github.com/Novotechnik/docker-image-compiler-gnu-arm-5_4)
     - ℹ️ Repository zum Erzeugen eines Docker Images für den Compiler GNU-ARM_5.4-2016q3
 - [docker-image-compiler-microchip-xc-dsc-v3_21](https://github.com/Novotechnik/docker-image-compiler-microchip-xc-dsc-v3_21)
     - ℹ️ Repository zum Erzeugen eines Docker IMages für den Compiler Microchip XC-DSC V3.21
 
-### 📄 Skript
+### 🔗 Sources
+
+- [docker-sources](https://github.com/Novotechnik/docker-sources)
+    - ℹ️ Etwaige (Quelle-) Dateien, die zur Containisierung von Arbeitsumgebungen gebraucht werden.
+
+### 🛠️ Tooling
 
 - [docker-lib](https://github.com/Novotechnik/docker-lib)
     - ℹ️ Shell-Skripte für Docker spezifische (Hilfs-) Funktionen innerhalb der Dockerfile.
@@ -102,30 +107,25 @@ Willkommen in der GitHub Organisation
 - [docker-toolchain](https://github.com/Novotechnik/docker-toolchain)
     - ℹ️ Sammlung wiederverwendbarer Shell-Skripte zur Installation und Konfiguration von Compiler-Toolchains, Device Family Packs (DFPs) und weiteren Werkzeugen für die Embedded-Entwicklung in Docker-Images.
 
-### 🔗 Sources
-
-- [docker-sources](https://github.com/Novotechnik/docker-sources)
-    - ℹ️ Etwaige (Quelle-) Dateien, die zur Containisierung von Arbeitsumgebungen gebraucht werden.
-
 
 
 ## 🏗️ CMake
-
-### 📄 Skript
-
-- [cmake-lib](https://github.com/Novotechnik/cmake-lib)
-    - ℹ️ Shell-Skripte für CMAKE spezifische (Hilfs-) Funktionen.
 
 ### 🔗 Sources
 
 - [cmake-sources](https://github.com/Novotechnik/cmake-sources)
     - ℹ️ Etwaige (Quelle-) Dateien wie Toolchains für CMake Konfigurationen und Builds.
 
+### 🛠️ Tooling
+
+- [cmake-lib](https://github.com/Novotechnik/cmake-lib)
+    - ℹ️ Shell-Skripte für CMAKE spezifische (Hilfs-) Funktionen.
+
 
  
 ## 🛠️ Tools
 
-### 📄 Skript
+### 🔨 Generator
 
 - [tool-sbom-generator](https://github.com/Novotechnik/tool-sbom-generator)
     - ℹ️ Zur Erzeugung der Firmware SBOM sowie eines Release Manifests.
@@ -136,7 +136,7 @@ Willkommen in der GitHub Organisation
     - ℹ️ Legacy Modul aus GitLab übernommen
     - 🌐 [Produktseite](https://git.novo.local/es/submodules/versioninfo.git)
 
-### ⚙️ Testframework
+### 🎯 Testframework
 
 - [systesthub](https://github.com/Novotechnik/systesthub)
 - [testbeamer](https://github.com/Novotechnik/testbeamer)
@@ -167,13 +167,13 @@ Willkommen in der GitHub Organisation
 
 
 
-## ✔️ Quality
+## ✅ Quality
 
 _Keine Einträge_
 
 
 
-## 📚 3rd-Party
+## 📦 3rd-Party
 
 ### 📡 Connectivity
 
@@ -186,7 +186,7 @@ _Keine Einträge_
 
 
 
-## 🛠️ TBM
+## 🎛️ TBM
 
 _Keine Einträge_
 
