@@ -51,7 +51,7 @@ CATEGORY_ICONS = {
 }
 
 SUBCATEGORY_ICONS = {
-    "Analyzer"              : "📊"
+    "Analyzer"              : "📊",
     "Application"           : "💼",
     "Board-Support-Package" : "📟",
     "CMakeLists"            : "📜",
