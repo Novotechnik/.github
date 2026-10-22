@@ -45,36 +45,42 @@ CATEGORY_ICONS = {
     "Tools"     : "🛠️",
     "Extern"    : "🌐",
     "Sonstiges" : "📌",
-    "Quality"   : "✔️",
-    "3rd-Party" : "📚",
-    "TBM"       : "🛠️"
+    "Quality"   : "✅",
+    "3rd-Party" : "📦",
+    "TBM"       : "🎛️"
 }
 
 SUBCATEGORY_ICONS = {
-    "Application"           : "⚙️",
-    "Board-Support-Package" : "⚙️",
+    "Analyzer"              : "📊"
+    "Application"           : "💼",
+    "Board-Support-Package" : "📟",
     "CMakeLists"            : "📜",
-    "Commons"               : "⚙️",
-    "Compiler"              : "⚙️",
+    "Commons"               : "🧩",
+    "Compiler"              : "🔨",
     "Connectivity"          : "📡",
+    "Converter"             : "🔄",
     "Demonstrator"          : "🔬",
+    "Device"                : "🖥️",
     "Dockerfile"            : "📜",
     "Dokumentation"         : "📚",
-    "Driver"                : "⚙️",
+    "Driver"                : "🔧",
+    "Generator"             : "🔨",
     "Hall"                  : "🧲",
-    "HAL"                   : "⚙️",
-    "Images"                : "📦",
+    "Images"                : "🖼️",
     "Jenkinsfile"           : "📜",
     "Linear"                : "📏",
-    "Middleware"            : "⚙️",
+    "Middleware"            : "🔀",
     "Rotativ"               : "🔄",
     "Services"              : "⚙️",
     "Skript"                : "📄",
     "Sources"               : "🔗",
     "Shared Library"        : "📚",
-    "Template"              : "📄",
-    "Testframework"         : "⚙️",
-    "Utils"                 : "⚙️"
+    "Template"              : "📝",
+    "Testframework"         : "🎯",
+    "Tooling"               : "🛠️",
+    "Utils"                 : "🛠️",
+    "Utilities"             : "⚙️",
+    "Validator"             : "✅"
 }
 
 ORGANIZATION = "Novotechnik"    #!< Entsprechend der GitHub Ogranisation.
