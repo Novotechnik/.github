@@ -44,13 +44,24 @@ Willkommen in der GitHub Organisation
 
 ### 🔧 Driver
 
+- [drv_adc_stm32](https://github.com/Novotechnik/drv_adc_stm32)
+- [drv_can_stm32](https://github.com/Novotechnik/drv_can_stm32)
+- [drv_flash_stm32](https://github.com/Novotechnik/drv_flash_stm32)
 - [drv_gpio_stm32](https://github.com/Novotechnik/drv_gpio_stm32)
     - ℹ️ Treiber Modul für die GPIOs
+- [drv_i2c_stm32](https://github.com/Novotechnik/drv_i2c_stm32)
+- [drv_spi_stm32](https://github.com/Novotechnik/drv_spi_stm32)
+- [drv_timer_stm32](https://github.com/Novotechnik/drv_timer_stm32)
+- [drv_uart_stm32](https://github.com/Novotechnik/drv_uart_stm32)
 
 ### 🔀 Middleware
 
 - [mw_memory_manager](https://github.com/Novotechnik/mw_memory_manager)
     - ℹ️ Middleware Modul für den Memory Manager
+
+### 📂 Sonstiges
+
+- [sw_platform_integrationsspielwiese](https://github.com/Novotechnik/sw_platform_integrationsspielwiese)
 
 ### 🛠️ Utils
 
@@ -138,6 +149,7 @@ Willkommen in der GitHub Organisation
 
 ### 🎯 Testframework
 
+- [cb_bridge](https://github.com/Novotechnik/cb_bridge)
 - [systesthub](https://github.com/Novotechnik/systesthub)
 - [testbeamer](https://github.com/Novotechnik/testbeamer)
 - [testcaller](https://github.com/Novotechnik/testcaller)
@@ -164,6 +176,8 @@ Willkommen in der GitHub Organisation
 - [nt-library](https://github.com/Novotechnik/nt-library)
     - ℹ️ Legacy Modul aus GitLab übernommen.
     - 🌐 [Produktseite](https://git.novo.local/es/submodules/library.git)
+- [project-template](https://github.com/Novotechnik/project-template)
+    - ℹ️ Repository template with a standard structure for documentation, headers, source code, and unit tests, including a README and .gitignore.
 
 
 
@@ -183,6 +197,7 @@ _Keine Einträge_
     - ℹ️ Novotechnik Stack for IO-Link with third-party-stack from IQ².
 - [connectivity-j1939](https://github.com/Novotechnik/connectivity-j1939)
     - ℹ️ Novotechnik Stack for CAN SAE J1939 with third-party-stack from EMTAS.
+- [stack_can](https://github.com/Novotechnik/stack_can)
 
 ### 🖥️ Device
 
