@@ -156,7 +156,7 @@ Willkommen in der GitHub Organisation
 
 ### ⚙️ Utilities
 
-- [firm_cypt](https://github.com/Novotechnik/firm_cypt)
+- [firmcypt](https://github.com/Novotechnik/firmcypt)
 - [flashlink](https://github.com/Novotechnik/flashlink)
 
 
