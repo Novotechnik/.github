@@ -154,6 +154,11 @@ Willkommen in der GitHub Organisation
 - [testbeamer](https://github.com/Novotechnik/testbeamer)
 - [testcaller](https://github.com/Novotechnik/testcaller)
 
+### ⚙️ Utilities
+
+- [firm_cypt](https://github.com/Novotechnik/firm_cypt)
+- [flashlink](https://github.com/Novotechnik/flashlink)
+
 
  
 ## 🌐 Extern
