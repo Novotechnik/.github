@@ -51,6 +51,7 @@ Willkommen in der GitHub Organisation
     - ℹ️ Treiber Modul für die GPIOs
 - [drv_i2c_stm32](https://github.com/Novotechnik/drv_i2c_stm32)
 - [drv_spi_stm32](https://github.com/Novotechnik/drv_spi_stm32)
+- [drv_system_stm32](https://github.com/Novotechnik/drv_system_stm32)
 - [drv_timer_stm32](https://github.com/Novotechnik/drv_timer_stm32)
 - [drv_uart_stm32](https://github.com/Novotechnik/drv_uart_stm32)
 
