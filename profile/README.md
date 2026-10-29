@@ -204,11 +204,16 @@ _Keine Einträge_
 - [connectivity-j1939](https://github.com/Novotechnik/connectivity-j1939)
     - ℹ️ Novotechnik Stack for CAN SAE J1939 with third-party-stack from EMTAS.
 - [stack_can](https://github.com/Novotechnik/stack_can)
+- [stack_io-link](https://github.com/Novotechnik/stack_io-link)
 
 ### 🖥️ Device
 
 - [device-stm32c0xx](https://github.com/Novotechnik/device-stm32c0xx)
     - ℹ️ Geräte spezifischer Code für die STM32C0 Familie.
+
+### 📂 Sonstiges
+
+- [io-link-firmware_tools](https://github.com/Novotechnik/io-link-firmware_tools)
 
 
 
