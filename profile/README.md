@@ -104,7 +104,7 @@ Willkommen in der GitHub Organisation
     - ℹ️ Repository zum Erzeugen eines Docker Images für den Compiler GNU-ARM_5.4-2016q3
 - [docker-image-compiler-microchip-xc-dsc-v3_21](https://github.com/Novotechnik/docker-image-compiler-microchip-xc-dsc-v3_21)
     - ℹ️ Repository zum Erzeugen eines Docker IMages für den Compiler Microchip XC-DSC V3.21
-- [docker-image-depcheck-12.1.8](https://github.com/Novotechnik/docker-image-depcheck-12.1.8)
+- [docker-image-depcheck-owasp-12.1.8](https://github.com/Novotechnik/docker-image-depcheck-owasp-12.1.8)
     - ℹ️ Repository zum Erzeugen eines Docker Images für den Dependency-Checker OWASP 12.1.8
 
 ### 🔗 Sources
