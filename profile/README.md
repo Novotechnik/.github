@@ -218,6 +218,8 @@ _Keine Einträge_
 ### 📂 Sonstiges
 
 - [io-link-firmware_tools](https://github.com/Novotechnik/io-link-firmware_tools)
+- [third-party-components-template](https://github.com/Novotechnik/third-party-components-template)
+    - ℹ️ Repository template for third-party components.
 
 
 
