@@ -23,17 +23,18 @@ from typing import Any
 # Variables
 # ==============================================================================
 CATEGORY_ORDER = [
-    "Firmware",
-    "Plattform",
-    "Jenkins",
-    "Docker",
-    "CMake",
-    "Tools",
-    "Extern",
-    "Sonstiges",
-    "Quality",
     "3rd-Party",
-    "TBM"
+    "CMake",
+    "Docker",
+    "Extern",
+    "Firmware",
+    "Jenkins",
+    "Plattform",
+    "Quality",
+    "Sonstiges",
+    "TBM",
+    "Testing",
+    "Tools",
 ]
 
 CATEGORY_ICONS = {
@@ -47,7 +48,8 @@ CATEGORY_ICONS = {
     "Sonstiges" : "📌",
     "Quality"   : "✅",
     "3rd-Party" : "📦",
-    "TBM"       : "🎛️"
+    "TBM"       : "🎛️",
+    "Testing"   : "🧪"
 }
 
 SUBCATEGORY_ICONS = {
@@ -212,6 +214,9 @@ def get_repository_subcategory(
         case "TBM":
             subcategory = get_repository_property(_repository, "TBM")
 
+        case "Testing":
+            subcategory = get_repository_property(_repository, "Testing")
+
         case _:
             subcategory = "Allgemein"
 
@@ -287,7 +292,7 @@ def create_repository_list(_repositories: list[dict] | None = None) -> str:
 
     for repository in sorted(
             _repositories,
-            key=lambda repo: repo["name"].lower()
+            key=lambda repo: repo["name"].casefold()
     ):
         name = repository["name"]
 
@@ -349,7 +354,7 @@ def render_template(
         if not subcategories:
             section += "_Keine Einträge_\n\n"
         else:
-            for subcategory in sorted(subcategories.keys()):
+            for subcategory in sorted(subcategories.keys(), key=str.casefold):
 
                 subcategoryIcon = SUBCATEGORY_ICONS.get(subcategory, "📂")
 
