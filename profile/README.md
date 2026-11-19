@@ -150,6 +150,7 @@ Willkommen in der GitHub Organisation
 
 ### 📂 Sonstiges
 
+- [n8n-plattform](https://github.com/Novotechnik/n8n-plattform)
 - [nt-versioninfo](https://github.com/Novotechnik/nt-versioninfo)
     - ℹ️ Legacy Modul aus GitLab übernommen
     - 🌐 [Produktseite](https://git.novo.local/es/submodules/versioninfo.git)
