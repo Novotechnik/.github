@@ -191,6 +191,8 @@ Willkommen in der GitHub Organisation
 - [nt-library](https://github.com/Novotechnik/nt-library)
     - ℹ️ Legacy Modul aus GitLab übernommen.
     - 🌐 [Produktseite](https://git.novo.local/es/submodules/library.git)
+- [nt-platform-bootloader](https://github.com/Novotechnik/nt-platform-bootloader)
+    - ℹ️ Novotechnik Bootloader auf Basis den MCU von ST (https://github.com/STMicroelectronics/stm32-mw-mcuboot)
 - [project-template](https://github.com/Novotechnik/project-template)
     - ℹ️ Repository template with a standard structure for documentation, headers, source code, and unit tests, including a README and .gitignore.
 
